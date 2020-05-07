@@ -1,4 +1,4 @@
-let ipUrl = 'http://127.0.0.1:7001/admin/'
+let ipUrl = 'http://47.95.145.164/admin/'
 
 let servicePath = {
   checkLogin: ipUrl + 'checkLogin',
