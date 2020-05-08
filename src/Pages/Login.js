@@ -26,7 +26,8 @@ function Login(props){
       method:'post',
       url:servicePath.checkLogin,
       data:dataProps,
-      withCredentials:true
+      withCredentials:true,
+      // headers: {'Content-Type': 'multipart/form-data',}
     }).then(
       res =>{
         setInLoading(false)
