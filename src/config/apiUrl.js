@@ -1,6 +1,6 @@
-let ipUrl = 'http://47.95.145.164:7001/admin/'//上线
+// let ipUrl = 'http://47.95.145.164:7001/admin/'//上线
 
-// let ipUrl = 'http://127.0.0.1:7001/admin/'
+let ipUrl = 'http://127.0.0.1:7002/admin/'
 let servicePath = {
   checkLogin: ipUrl + 'checkLogin',
   getTypeInfo:ipUrl + 'getTypeInfo',

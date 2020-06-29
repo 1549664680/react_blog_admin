@@ -62,12 +62,14 @@ function AddArticle(props) {
           localStorage.removeItem('openId')
           props.history.push('/')
         } else {
+          console.log(res.data.data)
           setTypeInfo(res.data.data)
         }
       }
     )
   }
   const selectTypehandler = (value) => {
+    console.log(value)
     setSelectType(value)
   }
   const saveArticle = () => {
@@ -168,7 +170,7 @@ function AddArticle(props) {
                 {
                   typeInfo.map((item, index) => {
                     return (
-                      <Option key={index} value={item.Id}>{item.typeName}</Option>
+                      <Option key={index} value={item.id}>{item.typeName}</Option>
                     )
                   })
                 }
